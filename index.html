@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mergezzle — le puzzle de fusion rétro-gaming</title>
+  <meta name="description" content="Mergezzle : fusionne câble, manette, borne d'arcade... jusqu'au trophée doré. 95 niveaux, 9 paliers rétro-gaming. Bientôt sur iOS et Android.">
+  <meta property="og:title" content="Mergezzle — le puzzle de fusion rétro-gaming">
+  <meta property="og:description" content="95 niveaux, 9 paliers rétro-gaming, du câble solitaire au trophée doré.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="mergezzle-icon.png">
+  <link rel="icon" type="image/png" href="mergezzle-icon.png">
+  <link rel="apple-touch-icon" href="mergezzle-icon.png">
+  <style>
+    :root {
+      --bg: #0f1020; --card: #1a1b30; --fg: #e8e8f0;
+      --muted: #a7a8c0; --accent: #ff9f43; --accent2: #8b7cff;
+      --border: #2a2c4a;
+    }
+    @media (prefers-color-scheme: light) {
+      :root { --bg:#f5f5fa; --card:#ffffff; --fg:#1a1b30; --muted:#5a5c78;
+              --accent:#e8871e; --accent2:#6b5cff; --border:#e2e2ee; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; background: var(--bg); color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex; align-items: center; justify-content: center; padding: 24px;
+      background-image:
+        radial-gradient(650px circle at 15% 0%, color-mix(in srgb, var(--accent) 22%, transparent), transparent 55%),
+        radial-gradient(600px circle at 100% 100%, color-mix(in srgb, var(--accent2) 18%, transparent), transparent 55%);
+    }
+    .card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 24px;
+      max-width: 600px; width: 100%; padding: 44px 36px; text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,.28);
+    }
+    .logo {
+      width: 88px; height: 88px; border-radius: 22px; margin: 0 auto 22px; display: block;
+      box-shadow: 0 12px 30px color-mix(in srgb, var(--accent) 42%, transparent);
+    }
+    h1 { margin: 0 0 10px; font-size: 32px; letter-spacing: -.5px; }
+    p.tag { color: var(--muted); margin: 0 auto 30px; font-size: 18px; max-width: 42ch; line-height: 1.45; }
+
+    .features {
+      display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 0 0 32px;
+    }
+    .feature {
+      display: flex; align-items: center; gap: 8px; padding: 9px 14px;
+      border: 1px solid var(--border); border-radius: 999px;
+      background: color-mix(in srgb, var(--accent) 8%, transparent);
+      font-size: 14px; font-weight: 600;
+    }
+    .feature span.ico { font-size: 16px; }
+
+    .coming-soon {
+      display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px;
+      border-radius: 999px; font-weight: 700; font-size: 15px;
+      background: color-mix(in srgb, var(--accent2) 14%, transparent);
+      border: 1px solid var(--border); color: var(--fg);
+    }
+
+    .legal { margin-top: 30px; }
+    .legal a { color: var(--muted); font-size: 14px; text-decoration: none; border-bottom: 1px solid var(--border); padding-bottom: 2px; }
+    .legal a:hover { color: var(--fg); }
+    footer { margin-top: 18px; color: var(--muted); font-size: 13px; }
+
+    @media (max-width: 420px) {
+      .card { padding: 34px 22px; }
+      h1 { font-size: 27px; }
+      p.tag { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <img class="logo" src="mergezzle-icon.png" width="88" height="88" alt="Mergezzle">
+    <h1>Mergezzle</h1>
+    <p class="tag">Fusionne le câble, la manette, la borne d'arcade... jusqu'au trophée doré. Un puzzle de fusion rétro-gaming, niveau après niveau.</p>
+
+    <div class="features">
+      <div class="feature"><span class="ico">🧩</span> 95 niveaux</div>
+      <div class="feature"><span class="ico">🕹️</span> 9 paliers rétro-gaming</div>
+      <div class="feature"><span class="ico">⭐</span> Système d'étoiles</div>
+    </div>
+
+    <div class="coming-soon">🚀 Bientôt disponible sur iOS et Android</div>
+
+    <div class="legal">
+      <a href="./legal/">Politique de confidentialité &amp; mentions légales</a>
+    </div>
+    <footer>© 2026 Damdes Studio</footer>
+  </main>
+</body>
+</html>
